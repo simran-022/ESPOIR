@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display+swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    background: rgb(248, 224, 235);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #df066b;
+    box-shadow: 0 5px 10px rgb(24, 1, 12) ;
+    padding: -20px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header .logo{
+    position: relative;
+    width: 15%;
+    height: auto;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 1.5em;
+    padding: 12px;
+    color: rgb(10, 2, 2);
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    background: #f396c2;
+    color: #fff;
+}
+
+header .navbar ul li ul{ 
+    position: absolute;
+    left: 80;
+    width: 180px;
+    background: hsl(337, 97%, 37%);
+}
+
+header .navbar ul li ul li{
+    width:100%;
+    border-top: 1ps solid rgba(0,0,0,0.1);
+} 
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 400px;
+}
+
+.content .textBox h2{
+    color:rgb(71, 4, 41);
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span{
+    color:rgb(185, 3, 103);
+    font-size: 1.2em;
+    font-weight: 700;
+    background: linear-gradient(90deg
+,#4285f4,#ea4335,#fbbc04,#34a853,#000 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 400%;
+    background-position: 100%;
+    transition: background-position 10800s;
+    font-family: Countryside;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.content .textBox h3{
+    color: #fc2288;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.content .textBox p{
+    color: rgb(175, 24, 94);
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.content .imgBox{
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0px;
+    margin-top: 250px;
+}
+
+.content .imgBox img{
+    max-width: 300px;
+}
+
+.thumb{
+    position: absolute;
+    bottom: -150px;
+    right: 700px;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s
+}
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.thumb li img{
+    max-width: 100px;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #df0c6e;
+    clip-path: circle(700px at right 900px);
+}

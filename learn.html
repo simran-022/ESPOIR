@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Learn</title>
+    <link rel="stylesheet" href="learn.css">
+</head>
+<body>
+
+    <div class="container">
+        <video src="video1.mp4" class="slider" autoplay loop muted controls></video>
+
+        <ul>
+            <li onclick="videoslider('video1')"><video src="video1.mp4" poster="image1.jpg" controls></video></li>
+            <li onclick="videoslider('video2')"><video src="video2.mp4 " poster="image2.jpg" controls></video></li>
+            <li onclick="videoslider('vide03')"><video src="video3.mp4" poster="image3.jpg" controls></video></li>
+            <li onclick="videoslider('video4')"><video src="video4.mp4" poster="image4.jpg" controls></video></li>
+            <li onclick="videoslider('video5')"><video src="video5.mp4" poster="image5.jpg" controls></video></li>
+            <li onclick="videoslider('video6')"><video src="video6.mp4" poster="image6.jpg" controls></video></li>
+             
+        </ul>
+    </div>
+
+
+    <script>
+
+        function videoslider(links){
+            document.querySelector(".slider").src = links;
+        }
+
+    </script>
+
+</body>
+</html>
